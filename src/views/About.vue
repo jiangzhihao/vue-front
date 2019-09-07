@@ -6,15 +6,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import { Button } from 'vant';
+import { Component, Vue, Prop } from 'vue-property-decorator';
+import { Button, Divider } from 'vant';
 
 @Component({
   components: {
     Button,
   },
 })
-export default class About extends Vue { }
+export default class About extends Vue {
+  @Prop()
+  public NavBar: string;
+}
 </script>
 
 <style lang="scss" scoped>
