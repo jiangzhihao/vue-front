@@ -2,6 +2,8 @@
   <div class="about">
     <h1>This is an about page</h1>
     <Button type="default">默认按钮</Button>
+    <!-- <NavBar></NavBar> -->
+    <div>{{NavBar}}</div>
   </div>
 </template>
 
