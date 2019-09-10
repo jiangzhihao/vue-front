@@ -1,8 +1,8 @@
 <template>
   <div>
     <router-view />
-    <Tabbar>
-      <TabbarItem icon="home-o">首页</TabbarItem>
+    <Tabbar route>
+      <TabbarItem icon="home-o" to="/home">首页</TabbarItem>
       <TabbarItem icon="search">分类</TabbarItem>
       <TabbarItem icon="cart-o">购物车</TabbarItem>
       <TabbarItem icon="coupon-o">会员中心</TabbarItem>

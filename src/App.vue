@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <div style="font-size: 16px">
+    <router-view />
+  </div>
 </template>
 
 <style lang="scss">

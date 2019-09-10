@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <NavBar title="时装服饰"></NavBar>
     <Search placeholder="搜索商品" v-model="searchValue"></Search>
     <Swipe :autoplay="3000" indicator-color="white" style="height: 350px">
@@ -19,7 +19,7 @@
     <Grid :gutter="10" :column-num="5" square style="height: 102px; align-items: center">
       <GridItem v-for="value in 5" :key="value" icon="photo-o" text="文字" />
     </Grid>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
