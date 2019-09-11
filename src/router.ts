@@ -25,5 +25,10 @@ export default new Router({
         },
       ],
     },
+    {
+      path: '/home-search',
+      component: () =>
+        import(/* webpackChunkName: "HomeSearch" */ './views/HomeSearch.vue'),
+    },
   ],
 });

@@ -1,7 +1,7 @@
 <template>
   <section>
     <NavBar title="时装服饰"></NavBar>
-    <Search placeholder="搜索商品" v-model="searchValue"></Search>
+    <Search placeholder="搜索商品" v-model="searchValue" @focus="onfocus"></Search>
     <Swipe :autoplay="3000" indicator-color="white" style="height: 350px">
       <SwipeItem>
         <div class="swipe-item">1</div>
@@ -40,6 +40,10 @@ import { NavBar, Search, Swipe, SwipeItem, Grid, GridItem } from 'vant';
 export default class Home extends Vue {
   @Model()
   private searchValue: string;
+
+  private onfocus() {
+    this.$router.push('/home-search');
+  }
 }
 </script>
 
