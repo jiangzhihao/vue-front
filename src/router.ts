@@ -30,5 +30,10 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "HomeSearch" */ './views/HomeSearch.vue'),
     },
+    {
+      path: '/register',
+      component: () =>
+        import(/* webpackChunkName: "Register" */ './views/Register.vue'),
+    },
   ],
 });
